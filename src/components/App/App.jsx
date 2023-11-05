@@ -55,6 +55,8 @@ export class App extends Component {
             ...prevState,
             bad: prevState.bad + 1,
           };
+        default:
+          return { prevState };
       }
     });
   };
